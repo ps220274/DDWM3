@@ -14,7 +14,7 @@ RUN apt-get install curl
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Copy Laravel files
-COPY ..
+COPY . /var/www/html
 
 RUN composer install
 
