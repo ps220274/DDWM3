@@ -16,6 +16,6 @@ WORKDIR /var/www/html
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN composer install
 
-EXPOSE 9000
+EXPOSE 8000
 
 CMD ["php-fpm"]
